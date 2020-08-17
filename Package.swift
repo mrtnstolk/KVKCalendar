@@ -3,14 +3,17 @@ import PackageDescription
 let package = Package(
     name: "KVKCalendar",
     platforms: [
-        // Add support for all platforms starting from a specific version.
-        .macOS(.v10_15),
-        .iOS(.v10)
+        .iOS(.v13),
+        .macOS(.v10_15)
     ],
     products: [
-        .library(name: "KVKCalendar", targets: ["KVKCalendar"])
+        .library(
+            name: "KVKCalendar",
+            targets: ["KVKCalendar"]),
     ],
     targets: [
-        .target(name: "KVKCalendar", dependencies: [])
+        .target(
+            name: "KVKCalendar",
+            dependencies: [])
     ]
 )
